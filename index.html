@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            
+            <button class="sidebar-close-btn" id="sidebarCloseBtn">
+                <i data-lucide="x"></i>
+            </button>
+
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <h2>Donezo</h2>
+            </div>
+
+            <div class="menu-section">
+                <p class="section-title">MENU</p>
+
+                <ul class="nav-links">
+
+                    <li class="nav-item active">
+                        <a href="#">
+                            <i data-lucide="layout-grid"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#">
+                            <i data-lucide="circle-check-big"></i>
+                            <span>Tasks</span>
+                            <div class="badge">12</div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#">
+                            <i data-lucide="calendar-days"></i>
+                            <span>Calendar</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#">
+                            <i data-lucide="chart-column"></i>
+                            <span>Analytics</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#">
+                            <i data-lucide="users"></i>
+                            <span>Team</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <p class="section-title">GENERAL</p>
+
+                <ul class="nav-links">
+                    <li class="nav-item">
+                        <a href="#">
+                            <i data-lucide="settings"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#">
+                            <i data-lucide="circle-help"></i>
+                            <span>Help</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#">
+                            <i data-lucide="log-out"></i>
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="upgrade-card">
+                <h3>Upgrade your productivity</h3>
+
+                <p>
+                    Get premium features and take your productivity
+                    to the next level.
+                </p>
+
+                <button class="upgrade-btn">
+                    Upgrade Now
+                </button>
+            </div>
+
+        </aside>
+
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!--------header--------->
+            <header class="topbar">
+                 
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu"></i>
+                </button>
+
+                <!-- Search -->
+                <div class="search-wrapper">
+                    <i data-lucide="search"></i>
+
+                    <input type="text" placeholder="Search tasks, projects, members...">
+
+                    <div class="shortcut">
+                        ⌘ K
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="topbar-right">
+
+                    <button class="header-btn">
+                        <i data-lucide="mail"></i>
+                    </button>
+
+                    <button class="header-btn" id="themeToggle">
+                        <i data-lucide="moon"></i>
+                    </button>
+
+                    <button class="header-btn notification-btn">
+                        <i data-lucide="bell"></i>
+
+                        <span class="notification-dot"></span>
+                    </button>
+
+                    <div class="user-profile">
+
+                        <img src="https://i.pravatar.cc/100?img=12" alt="profile">
+
+                        <div class="user-info">
+                            <h4>Totok Michael</h4>
+                            <p>Product Manager</p>
+                        </div>
+
+                        <i data-lucide="chevron-down"></i>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            <!-- PAGE TITLE -->
+            <section class="page-title dashboard-hero">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Plan, prioritize, and accomplish your tasks with ease.</p>
+                </div>
+
+                <div class="hero-actions">
+                    <button class="primary-btn">+ Add Project</button>
+                    <button class="outline-btn">Import Data</button>
+                </div>
+            </section>
+
+            <!-- KPI CARDS -->
+
+            <section class="stats-grid">
+
+                <div class="stat-card active-card">
+                    <div class="stat-content">
+                        <h4>Total Projects</h4>
+                        <h2>24</h2>
+                        <span>↗ 18% Increased from last month</span>
+                    </div>
+                    <div class="stat-icon">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-content">
+                        <h4>Ended Projects</h4>
+                        <h2>10</h2>
+                        <span>↗ 12% Increased from last month</span>
+                    </div>
+                    <div class="stat-icon">
+                        <i data-lucide="circle-check"></i>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-content">
+                        <h4>Running Projects</h4>
+                        <h2>12</h2>
+                        <span>↗ 8% Increased from last month</span>
+                    </div>
+                    <div class="stat-icon rocket">
+                        <i data-lucide="rocket"></i>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-content">
+                        <h4>Pending Projects</h4>
+                        <h2>2</h2>
+                        <span>On Discuss</span>
+                    </div>
+                    <div class="stat-icon">
+                        <i data-lucide="clock"></i>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- ANALYTICS -->
+            <section class="analytics-section">
+
+                <div class="analytics-card">
+                    <div class="card-header">
+                        <h3>Project Analytics</h3>
+                        <button>This Week</button>
+                    </div>
+
+                    <canvas id="analyticsChart"></canvas>
+                </div>
+
+                <div class="reminder-card">
+                    <h3>Upcoming Meeting</h3>
+
+                    <div class="reminder-section">
+                        <p>UI Review Meeting</p>
+
+                        <span>
+                            Today • 02:00 PM
+                        </span>
+                    </div>
+
+                    <button class="primary-btn">
+                        Join Meeting
+                    </button>
+                </div>
+
+
+                <!-- PROJECTS -->
+
+                <section class="projects-section">
+
+                    <div class="projects-card">
+
+                        <div class="card-header">
+                            <h3>Projects</h3>
+                            <button>View All</button>
+                        </div>
+
+                        <ul class="project-list">
+
+                            <li>
+                                <span>Landing Page Redesign</span>
+                                <span class="badge progress">
+                                    In Progress
+                                </span>
+                            </li>
+
+                            <li>
+                                <span>SaaS Dashboard</span>
+                                <span class="badge complete">
+                                    Completed
+                                </span>
+                            </li>
+
+                            <li>
+                                <span>Portfolio Website</span>
+                                <span class="badge pending">
+                                    Pending
+                                </span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+
+
+            <!-- TEAM + PROGRESS + TIMER -->
+            <section class="bottom-section">
+
+                <div class="team-card">
+                    <div class="card-header">
+                        <h3>Team Collaboration</h3>
+                        <button class="add">+ Add Member</button>
+                    </div>
+
+                    <div class="members">
+                        <div class="member">
+                            <img src="https://i.pravatar.cc/60?img=1">
+                            <div>
+                                <h4>Alexandra Deff</h4>
+                                <p>Working on Github Project Repository</p>
+                            </div>
+                            <span class="status complete">Completed</span>
+                        </div>
+
+                        <div class="member">
+                            <img src="https://i.pravatar.cc/60?img=2">
+                            <div>
+                                <h4>Edwin Adenike</h4>
+                                <p>Working on Integrate User Authentication System</p>
+                            </div>
+                            <span class="status progress">In Progress</span>
+                        </div>
+
+                        <div class="member">
+                            <img src="https://i.pravatar.cc/60?img=3">
+                            <div>
+                                <h4>Isaac Oluwaterinlorun</h4>
+                                <p>Working on Develop Search and Filter Functionality</p>
+                            </div>
+                            <span class="status pending">Pending</span>
+                        </div>
+
+                        <div class="member">
+                            <img src="https://i.pravatar.cc/60?img=4">
+                            <div>
+                                <h4>David Oshodi</h4>
+                                <p>Working on Responsive Layout for Homepage</p>
+                            </div>
+                            <span class="status progress">In Progress</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="progress-card">
+                    <h3>Project Progress</h3>
+
+                    <div class="semi-progress">
+                        <div class="progress-value">
+                            <h2>41%</h2>
+                            <p>Project Ended</p>
+                        </div>
+                    </div>
+
+                    <div class="progress-labels">
+                        <span>Completed</span>
+                        <span>In Progress</span>
+                        <span>Pending</span>
+                    </div>
+                </div>
+
+                <div class="timer-card">
+                    <div class="card-header">
+                        <h3>Time Tracker</h3>
+                        <button>View all</button>
+                    </div>
+
+                    <div class="timer-visual">
+                        <h1 id="timer">01:24:08</h1>
+                    </div>
+
+                    <div class="timer-buttons">
+                        <button>
+                            <i data-lucide="pause"></i>
+                        </button>
+
+                        <button class="stop-btn">
+                            <i data-lucide="square"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
